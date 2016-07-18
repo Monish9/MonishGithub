@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="ToDo">
+<head>
+<title>Angular</title>
+<script src="../angular.js/bower_components/angular/angular.min.js"></script>
+<script src="./js/script.js"></script>
+<style>
+    .done{ text-decoration: line-through; color: #ccc;}
+</style>
+</head>
+<body ng-controller="todocontroller">
+
+<form name="form1" ng-submit="addtodo()">
+<input type="text" name="newtodo" ng-model="newtodo" ng-pattern="/^(\w)(\d)+$/" required>
+<button ng-disabled="form1.$invalid">Go</button><br />
+
+<button ng-click="clearCompleted()">Clear Completed</button><br />
+<span style="color:red" ng-show="form1.newtodo.$error.pattern">Not valid number</span>
+</form>
+<ul>
+    <li ng-repeat="todo in todos">
+            <input type="checkbox" ng-model="todo.done">
+                <span ng-class="{'done': todo.done}">{{ todo.title }}</span>  
+    </li>
+</ul>
+</body>
+
+</html>

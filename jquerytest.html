@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>jquery test page</title>
+        <script src="../jquery-2.2.3.min.js"></script>
+        <script type="text/javascript">
+            $('document').ready(function(){
+                var data = '';
+                $('li.b').each(function(index, element){
+                    data += $(this).html();
+                });
+                console.log(data);
+                
+               // $('p:not(p:eq(1))').css('border','3px solid red');
+              // $('p[class^=b][lang*=en-]').css('border', '3px solid red');
+            //  $('li:has(li[class=a])').css('border', '3px solid red');
+            $('li:nth-child(3n)').css('border', '3px solid red');
+            //alert($('#list').html());
+            //$('#list').html('<li>This is new list item</li>');
+           // var new_var = $('<p>This is new paragraph</p>');
+           // $('#para1').html(new_var.html());
+           // $('p:last').text('This is last paragraph');
+          //  $('p:first').prepend(' with some content appended.');
+          $('p:last').prependTo('p:first');
+            });
+            
+            
+        </script>
+    </head>
+    <body>
+        <!--script type="text/javascript">
+            $('document').ready(function(){
+               alert('Hello'); 
+            });
+        </script-->
+        <ul id="list">
+            <li class="a">item 1
+            </li>
+            <li class="b">item 2
+            </li>
+            <li class="a">item 3
+            </li>
+            <li class="b">item 4
+            </li>
+        </ul>
+        <p id="para1">This is paragraph 1</p>
+        <p class="b">This is paragraph 2</p>
+        <p class="b" lang="en-us">This is paragraph 3</p>
+        <p id="para4">This is paragraph 4</p>
+    </body>
+</html>
