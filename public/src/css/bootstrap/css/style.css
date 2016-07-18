@@ -1,0 +1,40 @@
+.navbar-toggle { display:block; }
+.sidebar{
+	background-color: rgba(51, 153, 255, 0.1);
+	width: 10%;
+}
+.top-buffer{
+	margin-top: 80px;
+}
+.row-top-buffer{
+	margin-top: 20px;
+	
+}
+.glyphicon-edit:before{
+	margin-right: 5px;
+}
+.page-wrap{
+    max-width: 300px;
+}
+.bg-sidebar{
+    background: #cccc00;
+}
+.page-full{
+    min-width: 75%;
+    max-width: 100%;
+}
+.edit-bookmark{
+    margin-top: 40px;
+    margin-left: 320px;
+}
+.btn-link{
+    margin-top: 20px;
+}
+.full{
+    width: 100%;
+}
+.grid{
+    clear: both;
+    margin-left: 20px;
+   
+}

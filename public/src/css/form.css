@@ -1,0 +1,22 @@
+.input-group {
+    margin: 20px; 
+}
+
+.input-group label {
+    padding-right: 25px;
+    padding-left: 10px;
+    width:  130px;
+}
+.input-group input[type="text"]{
+    padding: 2px;
+}
+.input-group textarea{
+    vertical-align: bottom;
+    
+}
+
+.btn {
+    margin-left: 10px;
+    background-color: purple;
+    color: white;
+}

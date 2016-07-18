@@ -1,0 +1,17 @@
+
+.info-box.fail{
+    color: red;
+    text-align: center;
+    padding-left: 10px;
+    border: 3px solid red;
+    width: 400px;
+}
+
+.info-box.success{
+    color: black;
+    text-align: center;
+    padding-left: 10px;
+    border: 2px solid brown;
+    width: 400px;
+    background-color: #66FFCC;
+}
